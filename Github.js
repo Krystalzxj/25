@@ -1,4 +1,4 @@
-var list = ["中国","湖北","武汉","十堰"];
+var list = ["上海","浙江","杭州","江苏"];
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 var ala="";
 function nowtime(){
@@ -28,8 +28,8 @@ $httpClient.get(url, function(error, response, data){
     if (i == list.length - 1) {
      $done({
        title: "疫情   :   新增 | 现存"+ "   "+nowtime(),
-       icon:"filemenu.and.cursorarrow",
-       "icon-color":"#5AC8FA",
+       icon:"network.badge.shield.half.filled",
+       "icon-color":"#bddd22",
        content: ala.replace(/\n$/, "")
      });
     }
